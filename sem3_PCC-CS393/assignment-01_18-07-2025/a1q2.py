@@ -1,6 +1,5 @@
-name = "Dipam"
-age = 20
-marks = 95.5
+num_int = 42
+num_float = 3.14159
 
-# Using f-string
-print(f"My name is {name}, I am {age} years old and scored {marks} marks.")
+print(f"Integer as string: {str(num_int)}")
+print(f"Float as string: {str(num_float)}")
