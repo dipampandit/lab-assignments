@@ -8,5 +8,5 @@ print("a is b :", a is b)     # Checks if both refer to same object
 c = 10 + 5
 d = 15
 print("c == d:", c == d)      # True (values same)
-print("c is d:", c is d)      # 
-print("c is not d:", c is not d)  
+print("c is d:", c is d)      # False (same value but different object)
+print("c is not d:", c is not d)      # False
