@@ -1,0 +1,5 @@
+i = int(input("Enter an integer: "))
+f = float(input("Enter a float: "))
+print("Addition:", i + f)
+print("Subtraction:", i - f)
+print("Multiplication:", i * f)
