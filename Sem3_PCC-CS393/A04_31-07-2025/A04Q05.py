@@ -1,0 +1,7 @@
+# Find the factorial of a given number (using iteration).
+
+num = int(input("Enter a number: "))
+fact = 1
+for i in range(1, num + 1):
+    fact *= i
+print("Factorial is:", fact)
