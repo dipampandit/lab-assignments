@@ -1,8 +1,8 @@
 # Find the sum of digits of a given number.
 
 num = int(input("Enter a number: "))
-sum = 0
+total = 0
 while num > 0:
-    sum += num % 10
+    total += num % 10
     num //= 10
-print("Sum of digits:", sum)
+print("Sum of digits:", total)

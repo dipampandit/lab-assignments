@@ -1,11 +1,13 @@
 # Check whether a given number is a Perfect number or not.
 
 num = int(input("Enter a number: "))
-sum = 0
+total = 0
+
 for i in range(1, num):
     if num % i == 0:
-        sum += i
-if sum == num:
+        total += i
+
+if total == num:
     print("Perfect number")
 else:
     print("Not a perfect number")
