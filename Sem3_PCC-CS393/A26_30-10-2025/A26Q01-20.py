@@ -25,7 +25,7 @@ print(s)
 # What is the result of converting a dictionary directly into a set using set(dict)?
 d = {'a': 1, 'b': 2, 'c': 3}
 s = set(d)
-print(s)  # Only keys are included
+print(s)  # Only keys are printed
 
 # How can you convert a set back into a list?
 s = {1, 2, 3}
