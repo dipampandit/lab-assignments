@@ -85,8 +85,8 @@ B = {5, 6, 7, 8, 11, 12}
 print(A ^ B)
 
 # 19. Create a set from the dictionary keys {'name': 'Alice', 'age': 25, 'city': 'New York'}.
-d = {'name': 'Alice', 'age': 25, 'city': 'New York'}
-print(set(d.keys()))
+dic = {'name': 'Alice', 'age': 25, 'city': 'New York'}
+print(set(dic.keys()))
 
 # 20. Write a program that accepts a list of numbers and returns a set of numbers that appear more than once.
 nums = [1, 2, 3, 2, 4, 5, 1, 6, 2]
