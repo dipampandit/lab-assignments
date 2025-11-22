@@ -10,7 +10,7 @@ Explanation: Subarray [5, 1, 3] has the maximum sum 9.
 def max_sum_sublist(arr, k):
     n = len(arr)
     if n < k:
-        return None
+        return None, None
     max_sum = current_sum = sum(arr[:k])
     max_start_index = 0
 
