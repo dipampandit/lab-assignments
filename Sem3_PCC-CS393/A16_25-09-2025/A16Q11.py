@@ -1,4 +1,5 @@
 # Print numbers from n to 1
+
 def print_n_to_1(n):
     if n == 0:
         return

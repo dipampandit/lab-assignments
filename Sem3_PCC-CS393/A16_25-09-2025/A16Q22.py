@@ -1,4 +1,5 @@
 # Count the occurrences of a character in a string
+
 def count_char(s, c):
     if s == "":
         return 0

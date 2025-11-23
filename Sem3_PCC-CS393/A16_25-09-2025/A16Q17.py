@@ -1,4 +1,5 @@
 # Generate all subsets of a set
+
 def subsets(s, current="", index=0):
     if index == len(s):
         print(current)

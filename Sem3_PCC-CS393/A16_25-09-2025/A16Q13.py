@@ -1,4 +1,5 @@
 # Find the maximum element in a list
+
 def max_in_list(lst):
     if len(lst) == 1:
         return lst[0]

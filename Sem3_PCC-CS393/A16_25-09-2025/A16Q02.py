@@ -1,4 +1,5 @@
 # Calculate the nth fibonacci number
+
 def fibonacci(n):
     if n == 0:
         return 0

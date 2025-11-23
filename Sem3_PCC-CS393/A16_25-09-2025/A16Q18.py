@@ -1,4 +1,5 @@
 # Implement binary search
+
 def binary_search(arr, low, high, x):
     if low > high:
         return -1

@@ -1,4 +1,5 @@
 # Calculate the sum of even numbers in a list
+
 def sum_even(lst):
     if not lst:
         return 0

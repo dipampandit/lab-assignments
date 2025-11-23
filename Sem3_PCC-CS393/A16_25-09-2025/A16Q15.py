@@ -1,4 +1,5 @@
 # Calculate the sum of elements in a list
+
 def sum_list(lst):
     if not lst:
         return 0

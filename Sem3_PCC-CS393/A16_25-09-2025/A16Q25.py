@@ -1,4 +1,5 @@
 # Calculate the sum of odd numbers in a list
+
 def sum_odd(lst):
     if not lst:
         return 0

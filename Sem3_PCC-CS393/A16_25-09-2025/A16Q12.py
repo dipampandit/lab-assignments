@@ -1,4 +1,5 @@
 # Find the length of a string
+
 def string_length(s):
     if s == "":
         return 0

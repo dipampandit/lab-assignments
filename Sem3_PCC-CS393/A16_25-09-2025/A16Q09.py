@@ -1,4 +1,5 @@
 # Find the product of digits of a number
+
 def product_of_digits(n):
     if n == 0:
         return 1

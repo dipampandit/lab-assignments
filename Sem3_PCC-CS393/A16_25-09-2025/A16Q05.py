@@ -1,4 +1,5 @@
 # Check if a string is a palindrome
+
 def is_palindrome(s):
     if len(s) <= 1:
         return True

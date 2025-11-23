@@ -1,4 +1,5 @@
 # Generate all permutations of a string
+
 def permute(s, answer=""):
     if len(s) == 0:
         print(answer)

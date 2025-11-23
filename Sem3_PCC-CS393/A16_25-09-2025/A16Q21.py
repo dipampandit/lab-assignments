@@ -1,4 +1,5 @@
 # Compute the nth triangular number
+
 def triangular_number(n):
     if n == 0:
         return 0

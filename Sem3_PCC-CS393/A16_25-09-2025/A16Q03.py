@@ -1,4 +1,5 @@
 # Find the sum of digits of a number
+
 def sum_of_digits(n):
     if n == 0:
         return 0

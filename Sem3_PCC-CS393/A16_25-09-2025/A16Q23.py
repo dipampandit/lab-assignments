@@ -1,4 +1,5 @@
 # Flatten a nested list
+
 def flatten(lst):
     result = []
     for item in lst:

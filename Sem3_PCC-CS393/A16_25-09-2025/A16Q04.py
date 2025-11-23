@@ -1,4 +1,5 @@
 # Reverse a string
+
 def reverse_string(s):
     if s == "":
         return ""

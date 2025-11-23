@@ -1,4 +1,5 @@
 # Find the sum of first n natural numbers
+
 def sum_n(n):
     if n == 0:
         return 0
