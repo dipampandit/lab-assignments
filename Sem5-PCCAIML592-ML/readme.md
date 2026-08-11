@@ -32,6 +32,7 @@ You can check your installed versions with:
 pip show numpy pandas
 ```
 
+- Use the MSYS2 UCRT64 terminal and pacman commands for downloading of libraries.
 - I am importing python libraries from a native UCRT64 package:
 
 ```bash MSYS2 UCRT64 terminal
