@@ -60,14 +60,14 @@ echo "Perimeter of Rhombus: $perimeter_rhombus"
 
 # Calculate the simple & compound interest given principal amount, time of period and rate of interest.
 
-read -p "Enter Principal Amount: " interest_principal
-read -p "Enter Time Period: " interest_time
-read -p "Enter Rate of Interest: " interest_rate
+read -p "Enter Principal Amount: " principal
+read -p "Enter Time Period: " time
+read -p "Enter Rate of Interest: " rate
 
-simple_interest=$(echo "($interest_principal * $interest_time * $interest_rate) / 100" | bc)
+simple_interest=$(echo "($principal * $time * $rate) / 100" | bc)
 
-compound_amount=$(echo "$interest_principal * (1 + $interest_rate / 100)^$interest_time" | bc -l)
-compound_interest=$(echo "$compound_amount - $interest_principal" | bc -l)
+compound_amount=$(echo "$principal * (1 + $rate / 100)^$time" | bc -l)
+compound_interest=$(echo "$compound_amount - $principal" | bc -l)
 
 echo "Simple Interest: $simple_interest"
 echo "Compound Interest: $compound_interest"
@@ -79,9 +79,9 @@ echo "Compound Interest: $compound_interest"
 read -p "Enter Weight in kg: " bmi_weight
 read -p "Enter Height in meters: " bmi_height
 
-bmi_value=$(echo "$bmi_weight / ($bmi_height * $bmi_height)" | bc -l)
+bmi=$(echo "$bmi_weight / ($bmi_height * $bmi_height)" | bc -l)
 
-echo "BMI: $bmi_value"
+echo "BMI: $bmi"
 
 # ---
 
@@ -127,73 +127,73 @@ echo "Sum: $integer_sum"
 
 # Compute the average of three numbers.
 
-read -p "Enter First Number: " avg_first
-read -p "Enter Second Number: " avg_second
-read -p "Enter Third Number: " avg_third
+read -p "Enter First Number: " num1
+read -p "Enter Second Number: " num2
+read -p "Enter Third Number: " num3
 
-average_result=$(echo "($avg_first + $avg_second + $avg_third) / 3" | bc -l)
+average=$(echo "($num1 + $num2 + $num3) / 3" | bc -l)
 
-echo "Average: $average_result"
+echo "Average: $average"
 
 # ---
 
 # Compare two integer values:
 # a. Using conditional operator.
 
-read -p "Enter First Integer: " conditional_first
-read -p "Enter Second Integer: " conditional_second
+read -p "Enter First Integer: " cond1
+read -p "Enter Second Integer: " cond2
 
-conditional_result=$((conditional_first > conditional_second ? conditional_first : conditional_second))
+cond_result=$((cond1 > cond2 ? cond1 : cond2))
 
-echo "Greater Number: $conditional_result"
+echo "Greater Number: $cond_result"
 
 
 # b. Using logical operators only.
 
-read -p "Enter First Integer: " logical_first
-read -p "Enter Second Integer: " logical_second
+read -p "Enter First Integer: " logical1
+read -p "Enter Second Integer: " logical2
 
-[ $logical_first -gt $logical_second ] && echo "$logical_first is greater than $logical_second"
+[ $logical1 -gt $logical2 ] && echo "$logical1 is greater than $logical2"
 
-[ $logical_first -lt $logical_second ] && echo "$logical_first is smaller than $logical_second"
+[ $logical1 -lt $logical2 ] && echo "$logical1 is smaller than $logical2"
 
-[ $logical_first -eq $logical_second ] && echo "Both numbers are equal"
+[ $logical1 -eq $logical2 ] && echo "Both numbers are equal"
 
 # ---
 
 # Calculate the remainder of a division.
 
-read -p "Enter Dividend: " remainder_dividend
-read -p "Enter Divisor: " remainder_divisor
+read -p "Enter Dividend: " dividend
+read -p "Enter Divisor: " divisor
 
-remainder_result=$((remainder_dividend % remainder_divisor))
+remainder=$((dividend % divisor))
 
-echo "Remainder: $remainder_result"
+echo "Remainder: $remainder"
 
 # ---
 
 # Find the root of a quadratic equation
 
-read -p "Enter coefficient a: " quadratic_a
-read -p "Enter coefficient b: " quadratic_b
-read -p "Enter coefficient c: " quadratic_c
+read -p "Enter coefficient a: " a
+read -p "Enter coefficient b: " b
+read -p "Enter coefficient c: " c
 
-quadratic_discriminant=$(echo "$quadratic_b * $quadratic_b - 4 * $quadratic_a * $quadratic_c" | bc)
+d=$(echo "$b * $b - 4 * $a * $c" | bc)
 
-if [ $quadratic_discriminant -gt 0 ]
+if [ $d -gt 0 ]
 then
-    quadratic_root1=$(echo "scale=4; (-$quadratic_b + sqrt($quadratic_discriminant)) / (2 * $quadratic_a)" | bc -l)
-    quadratic_root2=$(echo "scale=4; (-$quadratic_b - sqrt($quadratic_discriminant)) / (2 * $quadratic_a)" | bc -l)
+    root1=$(echo "scale=4; (-$b + sqrt($d)) / (2 * $a)" | bc -l)
+    root2=$(echo "scale=4; (-$b - sqrt($d)) / (2 * $a)" | bc -l)
 
-    echo "Root 1: $quadratic_root1"
-    echo "Root 2: $quadratic_root2"
+    echo "Root 1: $root1"
+    echo "Root 2: $root2"
 
-elif [ $quadratic_discriminant -eq 0 ]
+elif [ $d -eq 0 ]
 then
-    quadratic_root=$(echo "scale=4; -$quadratic_b / (2 * $quadratic_a)" | bc -l)
+    root=$(echo "scale=4; -$b / (2 * $a)" | bc -l)
 
     echo "Both roots are equal."
-    echo "Root: $quadratic_root"
+    echo "Root: $root"
 
 else
     echo "Roots are imaginary/complex."
