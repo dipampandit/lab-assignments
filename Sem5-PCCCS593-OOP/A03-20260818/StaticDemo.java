@@ -16,15 +16,8 @@ public class StaticDemo {
         Student s1 = new Student("Rahul");
         Student s2 = new Student("Priya");
 
-        // Access static variable through objects
-        System.out.println(s1.college);
-        System.out.println(s2.college);
-
-        // Access static variable through class
-        System.out.println(Student.college);
-
         // Change the shared static variable
-        Student.college = "XYZ College";
+        Student.college = "GKCIET";
 
         s1.display();
         s2.display();
